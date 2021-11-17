@@ -5,13 +5,12 @@ import fr.eletutour.manager.MessageManager;
 import org.javacord.api.DiscordApi;
 import org.javacord.api.DiscordApiBuilder;
 
-import javax.security.auth.login.LoginException;
 
 public class DiscordBotMain {
 
     private static DiscordApi api;
 
-    public static void main(String[] args) throws LoginException {
+    public static void main(String[] args) {
 
         api = new DiscordApiBuilder()
                 .setToken(BotConstant.TOKEN)
