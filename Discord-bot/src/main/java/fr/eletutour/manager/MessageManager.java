@@ -33,7 +33,7 @@ public class MessageManager {
         if(event.getMessageContent().startsWith(BotConstant.PREFIX)){
             String[] args = event.getMessageContent().split(" ");
             String commandName = args[0].substring(BotConstant.PREFIX.length());
-            args = args.length == 1 ? new String[0] : Arrays.copyOfRange(args, 1, args.length - 1);
+            args = args.length == 1 ? new String[0] : Arrays.copyOfRange(args, 1, args.length);
 
             String[] finalArgs = args;
             commandRegistry.getByAlias(commandName).ifPresentOrElse(
