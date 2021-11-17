@@ -13,6 +13,7 @@ public class MessageManager {
     private static final CommandRegistry commandRegistry = new CommandRegistry();
 
     static {
+        //TODO : add your command here
         commandRegistry.addCommand(new Command(
                 "help",
                 "display the list of command",
