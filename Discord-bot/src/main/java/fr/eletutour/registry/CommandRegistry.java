@@ -4,6 +4,7 @@ import fr.eletutour.commands.Command;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 import java.util.Optional;
 
 public class CommandRegistry {
@@ -12,6 +13,10 @@ public class CommandRegistry {
 
     public CommandRegistry() {
         this.commands = new ArrayList<>();
+    }
+
+    public List<Command> getCommands(){
+        return commands;
     }
 
     public void addCommand(Command command){
