@@ -43,3 +43,11 @@ Now all you have to do, is to choose a server to invite the bot
 Do the captcha and at the end in your server you should have a notification that the bot joined
 
 ![](img/botAdded.png)
+
+## Adding new commands
+
+To add new commands to your bot :
+- Create a new class in the `commands` package
+- Make it implement `CommandExecutor`
+- Override the run methode with your code
+- In `MessageManager`, add your command in the `CommandRegistry`.
